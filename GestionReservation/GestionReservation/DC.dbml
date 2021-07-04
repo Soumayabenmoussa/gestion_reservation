@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="hotel_database" Class="DCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-GDJ9IJI\SQLEXPRESS;Initial Catalog=hotel_database;Integrated Security=True" SettingsObjectName="GestionReservation.Properties.Settings" SettingsPropertyName="hotel_databaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Reservation" Member="Reservation">
+    <Type Name="Reservation">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoomNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateRes" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
